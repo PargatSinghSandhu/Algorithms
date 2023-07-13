@@ -1,0 +1,12 @@
+
+arr [] = {1,2,3,3,5,8,10,10,11} 
+target = 1;
+lower bound = arr[i]>=target 
+
+1. Set 0th index as low and n-1 as high. 
+2. Set Hypothetical answer of lower bound = ans as n.(If we find the answer then that's good if not then the n will be the answer).
+3. Now I've to check throughout the array but in binary so we run a loop until the high<=low.
+4. Now we find a mid = (low+high)/2.
+5. The moment we get mid we will compare with target. 
+6. If the mid is greater than the target then we go to the left side and high = mid - 1.
+7. If the mid is less than the target then we go to the righ side and low = mid + 1. 
