@@ -1,3 +1,4 @@
+*if the root == NULL, then put the val in the TreeNode and retrun it. return new TreeNode(val);
 1. Put the root into the new node.
 2. start a while loop, while(true).
 3. Now, check if the value(val) which is to be inserted is greater than the node value.
@@ -5,3 +6,7 @@
 4. Now, check if the right side of node is null or not.
 5. If it is not null then, set the node= node->right.
 6. If it is null then it means that the val will be inserted here and break the loop.
+7. IF the val is less the node->val, then it means it will be inserted in the left side of the tree.
+8. Now just check if the Node->left!=NULL, if it is not null then do node= node->left.(this will traverse to the next node).
+9. if node's left val is null, then just put the value here, node->left = new TreeNode(val) and break.
+10. return root;
