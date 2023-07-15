@@ -1,0 +1,20 @@
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+
+
+Now, if I want to create a node to store the root value of binary search tree.
+Then, 
+TreeNode * node = root;
+
+TreeNode is the object of struct TreeNode and Structure TreeNode is the self-defined datatype. And this is the structure which stores
+val, left and right members.
+And we use this TreeNode object to create node or we can say a node of data type TreeNode.
+Now we make pointer because that will point to the root value and store the same address, it will not create a new memory address. So, in this case 
+whatever changes are made to the root will be reflected to the node as well.
