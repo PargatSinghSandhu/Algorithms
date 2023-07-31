@@ -1,0 +1,9 @@
+1. You have bool isValidBST(TreeNode* root).
+2. In the above function call return function passsing root, LONG_MIN, LONG_MAX.
+3. Now in the function defintion get bool isValidBST(TreeNode* root, long minVal, long maxVal).
+4. Here check if(root==NULL) return true.
+5. Main condition which check the node is less than min val and greater than max val.
+6. if(root->val<=minVal||root->val>=maxVal) return false.
+7. Now to check every node, do recursion 
+8. return isValidBST(root->left,minVal,root->val)&&isValidBST(root->right,root->val,maxVal)
+9. The first one will check the left nodes and the second will check the right nodes.
