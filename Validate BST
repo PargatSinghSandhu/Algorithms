@@ -1,4 +1,4 @@
-1. You have bool isValidBST(TreeNode* root).
+1.  You have bool isValidBST(TreeNode* root).
 2. In the above function call return function passsing root, LONG_MIN, LONG_MAX.
 3. Now in the function defintion get bool isValidBST(TreeNode* root, long minVal, long maxVal).
 4. Here check if(root==NULL) return true.
